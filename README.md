@@ -1,20 +1,57 @@
-# Spring Boot User & Poster API
+# 🚀 Spring Boot User & Poster API
 
-## Features
-- User CRUD API
-- Poster API (One-to-Many relationship)
-- Service layer architecture
-- Spring Data JPA + H2 database
+A RESTful API built with Spring Boot that manages users and their posters with a one-to-many relationship.
 
-## Tech Stack
-- Java 25
+---
+
+## 🛠️ Tech Stack
+
+- Java 17+
 - Spring Boot
-- JPA (Hibernate)
-- H2 Database
+- Spring Data JPA
+- PostgreSQL
+- Maven
+- Postman
 
-## Endpoints
+---
 
-### Users
-- GET /users
-- POST /users
-- DELETE /users/{id}
+## 📊 Features
+
+- Create and retrieve users
+- Create and retrieve posters
+- One-to-many relationship (User → Posters)
+- RESTful API design
+- JSON responses
+- Connected to PostgreSQL database
+
+---
+
+## 🔗 API Endpoints
+
+### 👤 Users
+
+| Method | Endpoint | Description |
+|-------|--------|-------------|
+| GET | /users | Get all users |
+| POST | /users | Create user |
+
+---
+
+### 🖼️ Posters
+
+| Method | Endpoint | Description |
+|-------|--------|-------------|
+| GET | /posters | Get all posters |
+| POST | /posters | Create poster |
+
+---
+
+## 📦 Example Request
+
+### Create User
+
+```json
+{
+  "name": "John",
+  "email": "john@email.com"
+}
